@@ -1,25 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: #548687;
-    text-align: center; 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    text-align: center;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 }
-h1{
-font-family: "Poppins", sans-serif;
-font-size: 8vmin;
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 8vmin;
 }
-.container{
+
+.container {
     height: 70vmin;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.game{
+.game {
     height: 60vmin;
     width: 60vmin;
     display: flex;
@@ -28,20 +31,81 @@ font-size: 8vmin;
     align-items: center;
     gap: .5rem;
 }
-.box{
-    height: 18vmin;
+
+.box {
+    height: 16vmin;
     width: 18vmin;
     border-radius: 1rem;
     border: none;
     box-shadow: 0 0 1rem rgba(0 0 0.1);
     font-size: 8vmin;
     color: #b0413e;
+    background-color: #ffff;
 }
-#reset-btn{
-    padding: 1rem;
+
+#reset-btn {
+    padding: 1.5rem;
     font-size: 1.15rem;
     background-color: #283618;
     color: #fefae0;
     border-radius: 1rem;
     border: none;
 }
+
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap : 2rem;
+}
+
+#newbtn {
+    padding: 1.5rem;
+    font-size: 1.15rem;
+    background-color: #283618;
+    color: #fefae0;
+    border-radius: 1rem;
+    border: none
+}
+
+.msg {
+    color: #fefae0;
+    font-size: 5vmin;
+    animation: msgs 1s ease-in-out 2s  alternate;
+
+}
+@keyframes msgs {
+    0%{
+
+    }
+    30%{
+        transform: scale(2);
+        color: #9c100c;
+        font-family: "Poppins", sans-serif;
+    }
+    50%{
+
+   transform: scale(1);
+        color: #9c100c;
+        font-family: "Poppins", sans-serif;
+    }
+    
+}
+
+.hide {
+    display: none;
+} 
+#Ctheme{
+    position: relative;
+    left: 36rem;
+    padding: 1rem 0.50rem;
+    margin: 1rem;
+    width: 6rem;
+    background-color: #283618;
+    color: white;
+    border-radius: 2rem;
+    transition: 200ms ease-in;
+
+} 
